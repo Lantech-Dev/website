@@ -1,0 +1,220 @@
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+    'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url(background4.png);
+  background-size: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a:link,
+a:visited {
+  color: #2196f3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+code {
+  background-color: #575757;
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-size: 15px
+}
+h1 {
+  color:#ffffff;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+h2 {
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+  
+}
+
+h3 {
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  color: #ffffff;
+  margin: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+black-text {
+	color: #000000;
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: #575757;
+  }
+  div {
+    margin: 0 auto;
+    width: auto;
+    box-shadow: none;
+  }
+}
+
+.topnav {
+  background-color: #121212;
+  overflow: hidden;
+  border-radius: 15px;
+  margin:10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #010A47;
+}
+
+
+/* Style the links inside the navigation bar */
+.buttons-b a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 15px;
+  margin: 5px;
+  margin-top: 5px;
+  color: white;
+}
+
+/* Change the color of links on hover */
+.buttons-b a:hover {
+  background-color: #121212;
+  animation: fadeIn 0.25s;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.buttons-b a.active {
+  color: white;
+  background-image: url(onthispage.png);
+  background-repeat: no-repeat;
+}
+
+.buttons a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 15px;
+  margin: 5px;
+  margin-top: 5px;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Change the color of links on hover */
+.buttons a:hover {
+  background-color: #121212;
+  animation: fadeIn 0.25s;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.buttons a.active {
+  color: white;
+  background-image: url(onthispage.png);
+  background-repeat: no-repeat;
+}
+
+.buttons-border {
+  background: #383838;
+  position: absolute;
+  border-radius: 5px;
+  padding
+}
+
+.background-image {
+  color: white;
+  background-color: #010A47;
+  border-radius: 15px;
+  padding: 5px;
+  
+}
+
+.buttons-page {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.buttons-page a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 15px;
+  color: white;
+  background-image: url(onthispage.png);
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  margin-top: 15px;
+}
+
+/* Change the color of links on hover */
+.buttons-page a:hover {
+  background-image: url(hover.png);
+  animation: fadeIn 0.25s;
+  color: white;
+}
+
+notif-yellow {
+	padding: 1px;
+	margin: 20px;
+    margin-left: 10%;
+	margin-right: 10%;
+    border: 20px solid black;
+	background-color: #ffd900;
+	border-color: #947E02;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	width: auto;
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
