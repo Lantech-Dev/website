@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Gamepad2, Shield, Wrench, Upload, Menu, X } from 'lucide-react';
+import { Gamepad2, Shield, Wrench, Upload, Menu, X, Scale } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MobileNav } from './MobileNav';
 
@@ -20,6 +20,11 @@ const navItems = [
     href: "/developer-tools",
     icon: Wrench,
     label: "Developer Tools"
+  },
+  {
+    href: "/license",
+    icon: Scale,
+    label: "License"
   }
 ];
 
