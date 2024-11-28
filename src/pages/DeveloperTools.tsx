@@ -130,7 +130,7 @@ export default function DeveloperTools() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://docs.google.com/forms/d/14Sy6l_4l7MUQ2QdTSVzdEBdrnv45AH8LQCtAPVxL5V4/"
+            href="https://docs.google.com/forms/d/1eKiFkPOEsJoggPYRmi03R1nok9omU-gdh0DEce3RLtQ/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
