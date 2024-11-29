@@ -20,19 +20,19 @@ export function Hero() {
         }}
         className="mb-6"
       >
-        <Gamepad2 className="h-16 w-16 md:h-24 md:w-24 mx-auto text-indigo-600" />
+        <Gamepad2 className="h-16 w-16 md:h-24 md:w-24 mx-auto text-indigo-600 dark:text-indigo-400" />
       </motion.div>
       
       <motion.h1
         variants={fadeInUp}
-        className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4"
       >
         Welcome to Lantech Games
       </motion.h1>
       
       <motion.p
         variants={fadeInUp}
-        className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 px-4"
+        className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8 px-4"
       >
         Your destination for safe, age-appropriate gaming experiences. Join our community
         of developers and players today!
