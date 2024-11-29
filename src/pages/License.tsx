@@ -36,20 +36,20 @@ export default function License() {
         variants={itemVariants}
         className="flex items-center space-x-3 mb-8"
       >
-        <Scale className="h-8 w-8 text-indigo-600" />
-        <h1 className="text-3xl font-bold text-gray-900">Open Source Licensing</h1>
+        <Scale className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Open Source Licensing</h1>
       </motion.div>
 
       <motion.div 
         variants={itemVariants}
-        className="prose prose-indigo max-w-none mb-8"
+        className="prose prose-indigo dark:prose-invert max-w-none mb-8"
       >
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6">
+        <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6">
           <div className="flex items-center mb-2">
-            <Info className="h-6 w-6 text-blue-600 mr-2" />
-            <h2 className="text-xl font-semibold text-gray-800">Our Commitment to Open Source</h2>
+            <Info className="h-6 w-6 text-blue-600 dark:text-blue-400 mr-2" />
+            <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">Our Commitment to Open Source</h2>
           </div>
-          <p className="text-gray-700">
+          <p className="text-gray-700 dark:text-gray-300">
             Lantech Games is proud to release our software under the GNU General Public License v3.0 (GPLv3), 
             championing the principles of software freedom, transparency, and collaborative innovation.
           </p>
@@ -58,13 +58,13 @@ export default function License() {
         <div className="grid md:grid-cols-2 gap-6">
           <motion.div 
             variants={itemVariants}
-            className="bg-white shadow-md rounded-lg p-6"
+            className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6"
           >
             <div className="flex items-center mb-4">
-              <Code className="h-6 w-6 text-green-600 mr-2" />
-              <h3 className="text-lg font-semibold text-gray-800">What This Means for You</h3>
+              <Code className="h-6 w-6 text-green-600 dark:text-green-400 mr-2" />
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100">What This Means for You</h3>
             </div>
-            <ul className="text-gray-700 space-y-2 list-disc pl-5">
+            <ul className="text-gray-700 dark:text-gray-300 space-y-2 list-disc pl-5">
               <li>You can freely use, modify, and distribute the software</li>
               <li>Access to the complete source code is guaranteed</li>
               <li>Any modifications must be shared under the same license</li>
@@ -74,16 +74,16 @@ export default function License() {
 
           <motion.div 
             variants={itemVariants}
-            className="bg-white shadow-md rounded-lg p-6"
+            className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6"
           >
             <div className="flex items-center mb-4">
-              <Scale className="h-6 w-6 text-purple-600 mr-2" />
-              <h3 className="text-lg font-semibold text-gray-800">Copyright Information</h3>
+              <Scale className="h-6 w-6 text-purple-600 dark:text-purple-400 mr-2" />
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Copyright Information</h3>
             </div>
-            <p className="text-gray-700">
+            <p className="text-gray-700 dark:text-gray-300">
               Lantech Games Copyright (C) 2024, BigPotatoDev
               <br />
-              <span className="text-sm text-gray-500">All rights reserved under the GPLv3 license</span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">All rights reserved under the GPLv3 license</span>
             </p>
           </motion.div>
         </div>
@@ -91,9 +91,9 @@ export default function License() {
 
       <motion.div
         variants={itemVariants}
-        className="bg-gray-50 border-t-4 border-indigo-600 p-6 rounded-b-lg"
+        className="bg-gray-50 dark:bg-gray-800 border-t-4 border-indigo-600 p-6 rounded-b-lg"
       >
-        <p className="text-gray-700 text-sm">
+        <p className="text-gray-700 dark:text-gray-300 text-sm">
           By using this software, you agree to the terms of the GNU General Public License v3.0. 
           For the full license text, please refer to the complete license document below.
         </p>
@@ -101,12 +101,12 @@ export default function License() {
 
       <motion.div
         variants={itemVariants}
-        className="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8"
+        className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 md:p-8 mt-8"
       >
-        <h3 className="text-xl font-semibold text-gray-900 mb-4">Full GNU General Public License v3.0</h3>
-        <pre className="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed max-h-96 overflow-y-auto">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Full GNU General Public License v3.0</h3>
+        <pre className="whitespace-pre-wrap text-sm text-gray-700 dark:text-gray-300 leading-relaxed max-h-96 overflow-y-auto">
                        GNU GENERAL PUBLIC LICENSE
-                       Version 3, 29 June 2007.
+                       Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. https://fsf.org/
  Everyone is permitted to copy and distribute verbatim copies
@@ -689,7 +689,7 @@ public statement of acceptance of a version permanently authorizes you
 to choose that version for the Program.
 
   Later license versions may give you additional or different
-permissions.  However, no additional obligations are imposed on any
+permissions.  However, no additional obligations are impose d on any
 author or copyright holder as a result of your choosing to follow a
 later version.
 
