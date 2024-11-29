@@ -7,8 +7,8 @@ interface AlertProps {
 
 export function Alert({ variant, children }: AlertProps) {
   const variants = {
-    warning: 'bg-yellow-100 border-yellow-500 text-yellow-700',
-    info: 'bg-blue-100 border-blue-500 text-blue-700',
+    warning: 'bg-yellow-100 dark:bg-yellow-900/30 border-yellow-500 text-yellow-700 dark:text-yellow-200',
+    info: 'bg-blue-100 dark:bg-blue-900/30 border-blue-500 text-blue-700 dark:text-blue-200',
   };
 
   return (
