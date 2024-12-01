@@ -4,10 +4,74 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lantech Games - Enjoy gaming</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Lantech Games - Safe Gaming for All Ages</title>
+    <meta name="title" content="Lantech Games - Safe Gaming for All Ages">
+    <meta name="description" content="Discover age-appropriate games on Lantech Games. A safe gaming platform with strict content guidelines and age-specific categories for children and teens.">
+    <meta name="keywords" content="safe games, kids games, educational games, age-appropriate gaming, family-friendly games, online games">
+    <meta name="author" content="Lantech Games">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lantechgames.org/">
+    <meta property="og:title" content="Lantech Games - Safe Gaming for All Ages">
+    <meta property="og:description" content="Discover age-appropriate games on Lantech Games. A safe gaming platform with strict content guidelines and age-specific categories for children and teens.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556438064-2d7646166914">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lantechgames.org/">
+    <meta property="twitter:title" content="Lantech Games - Safe Gaming for All Ages">
+    <meta property="twitter:description" content="Discover age-appropriate games on Lantech Games. A safe gaming platform with strict content guidelines and age-specific categories for children and teens.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1556438064-2d7646166914">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4F46E5">
+    
+    <!-- Additional SEO Tags -->
+    <meta name="application-name" content="Lantech Games">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Lantech Games">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://lantechgames.com/">
+    
+    <!-- Preconnect to Important Origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" as="script" href="/src/main.tsx" type="module">
+    <link rel="preload" href="/vite.svg" as="image" type="image/svg+xml">
+    
+    <!-- Critical CSS -->
+    <style>
+      .loading-spinner {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Initial Loading State -->
+      <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

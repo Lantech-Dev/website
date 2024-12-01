@@ -9,4 +9,14 @@ export default {
     extend: {},
   },
   plugins: [],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  variants: {
+    extend: {},
+  },
+  corePlugins: {
+    preflight: true,
+  }
 }
