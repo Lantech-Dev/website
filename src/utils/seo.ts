@@ -9,7 +9,7 @@ export function updateMetaTags({
   title = 'Lantech Games - Safe Gaming for All Ages',
   description = 'Discover age-appropriate games on Lantech Games. A safe gaming platform with strict content guidelines and age-specific categories for children and teens.',
   image = 'https://images.unsplash.com/photo-1556438064-2d7646166914',
-  url = 'https://lantechgames.com'
+  url = 'https://lantechgames.org'
 }: SEOProps = {}) {
   // Update basic meta tags
   document.title = title;
