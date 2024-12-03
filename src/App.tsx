@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar';
 import { LoadingSpinner } from './components/ui/LoadingSpinner';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { Home, PrivacyPolicy, DeveloperTools, License } from './routes';
+import { Home, PrivacyPolicy, DeveloperTools, License, Documentation } from './routes';
 import { updateMetaTags } from './utils/seo';
 
 function AppRoutes() {
@@ -27,6 +27,10 @@ function AppRoutes() {
       '/license': {
         title: 'License Information - Lantech Games',
         description: 'View the licensing terms and conditions for games and content on Lantech Games.'
+      },
+      '/docs': {
+        title: 'Documentation - Lantech Games',
+        description: 'Comprehensive documentation for developing and publishing games on the Lantech Games platform.'
       }
     };
 
@@ -42,6 +46,7 @@ function AppRoutes() {
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/developer-tools" element={<DeveloperTools />} />
       <Route path="/license" element={<License />} />
+      <Route path="/docs" element={<Documentation />} />
     </Routes>
   );
 }
