@@ -37,66 +37,80 @@ const docLinks: DocLink[] = [
     title: 'Game Guidelines',
     href: '#game-guidelines',
     position: 3,
-    description: 'Learn about content and technical requirements',
+    description: 'Learn about content and age requirements',
     subitems: [
-      { title: 'Age Ratings', href: '#age-ratings' },
-      { title: 'Content Rules', href: '#content-rules' },
-      { title: 'Technical Requirements', href: '#technical-requirements' }
+      { title: 'Ages 8 and Below', href: '#age-8' },
+      { title: 'Ages 9 to 12', href: '#age-9-12' },
+      { title: 'Ages 13 and Above', href: '#age-13' },
+      { title: 'Prohibited Content', href: '#prohibited-content' }
     ]
   },
   {
-    title: 'Publishing',
-    href: '#publishing',
+    title: 'Integrations',
+    href: '#integrations',
     position: 4,
-    description: 'Submit and publish your game',
+    description: 'Learn how to integrate with Lantech features',
     subitems: [
-      { title: 'Submission Process', href: '#submission-process' },
-      { title: 'Review Guidelines', href: '#review-guidelines' }
+      { title: 'Cookies & Storage', href: '#cookies' },
+      { title: 'Monetization', href: '#monetization' }
     ]
   }
 ];
 
 export function DocsNavigation() {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      const header = document.querySelector('nav');
+      const headerOffset = header?.offsetHeight || 0;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset - 20;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Update URL without triggering a scroll
+      window.history.pushState({}, '', href);
+    }
+  };
+
   return (
-    <nav className="w-64 pr-8 hidden lg:block">
-      <div className="sticky top-20">
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="space-y-8"
-        >
-          {docLinks.map((section) => (
-            <div key={section.href} className="space-y-2">
-              <a
-                href={section.href}
-                className="block text-lg font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-              >
-                {section.title}
-              </a>
-              {section.description && (
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  {section.description}
-                </p>
-              )}
-              {section.subitems && (
-                <ul className="mt-2 space-y-2 border-l-2 border-gray-200 dark:border-gray-700">
-                  {section.subitems.map((item) => (
-                    <li key={item.href}>
-                      <a
-                        href={item.href}
-                        className="group flex items-center pl-4 text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-                      >
-                        <ChevronRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <span className="ml-2">{item.title}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
-        </motion.div>
-      </div>
-    </nav>
+    <div className="space-y-8">
+      {docLinks.map((section) => (
+        <div key={section.href} className="space-y-2">
+          <a
+            href={section.href}
+            onClick={(e) => scrollToSection(e, section.href)}
+            className="block text-lg font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+          >
+            {section.title}
+          </a>
+          {section.description && (
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              {section.description}
+            </p>
+          )}
+          {section.subitems && (
+            <ul className="mt-2 space-y-2 border-l-2 border-gray-200 dark:border-gray-700">
+              {section.subitems.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    onClick={(e) => scrollToSection(e, item.href)}
+                    className="group flex items-center pl-4 text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                  >
+                    <ChevronRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <span className="ml-2">{item.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+    </div>
   );
 }
