@@ -24,6 +24,11 @@ const routes: Route[] = [
     path: '/license',
     priority: 0.7,
     changefreq: 'monthly'
+  },
+  {
+    path: '/docs',
+    priority: 0.9,
+    changefreq: 'weekly'
   }
 ];
 

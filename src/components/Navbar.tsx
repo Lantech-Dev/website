@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Gamepad2, Shield, Wrench, Upload, Menu, X, Scale } from 'lucide-react';
+import { Gamepad2, Shield, Wrench, Upload, Menu, X, Scale, Book } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MobileNav } from './MobileNav';
 import { ThemeToggle } from './ui/ThemeToggle';
@@ -11,6 +11,11 @@ const navItems = [
     icon: Upload,
     label: "Upload Game",
     isExternal: true
+  },
+  {
+    href: "/docs",
+    icon: Book,
+    label: "Documentation"
   },
   {
     href: "/privacy-policy",
