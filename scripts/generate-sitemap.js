@@ -1,7 +1,7 @@
 import { create } from 'xmlbuilder2';
 import { writeFileSync, mkdirSync } from 'fs';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import path, { dirname, join } from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,7 +18,7 @@ const routes = [
   },
   {
     path: '/privacy-policy',
-    priority: 0.8,
+    priority: 0.9,
     changefreq: 'monthly'
   },
   {
@@ -28,7 +28,12 @@ const routes = [
   },
   {
     path: '/license',
-    priority: 0.7,
+    priority: 0.9,
+    changefreq: 'monthly'
+  },
+  {
+    path : '/docs',
+    priority : 0.9,
     changefreq: 'monthly'
   }
 ];
