@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lantechgames.org/sitemap.xml
