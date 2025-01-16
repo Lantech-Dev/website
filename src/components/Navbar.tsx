@@ -13,10 +13,6 @@ const navItems = [
     isExternal: true
   },
   {
-    href: "/slep-studios/jwo",
-    label: "SLEP Studios"
-  },
-  {
     href: "/docs",
     icon: Book,
     label: "Documentation"
