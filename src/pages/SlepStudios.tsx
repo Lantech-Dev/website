@@ -5,7 +5,7 @@ const CandyForLife = () => {
     <div className="font-montserrat bg-gray-100 leading-relaxed m-0 p-0 dark:bg-gray-900">
       <div className="max-w-3xl mx-auto my-5 bg-white p-5 shadow-md rounded-lg dark:bg-gray-800">
         <img
-          src="../../slep-studios/Candyforlife/Candyforlifebanner.png"
+          src="https://raw.githubusercontent.com/coderzawad/website/refs/heads/main/slep-studios/Candyforlife/Candyforlifebanner.png"
           alt="Game Banner"
           className="w-full h-auto mb-5 rounded-lg"
         />
@@ -73,7 +73,7 @@ const CandyForLife = () => {
       <div className="max-w-3xl mx-auto bg-white p-5 shadow-md rounded-lg dark:bg-gray-800">
         <div
           className="mt-5 bg-cover bg-center text-white p-10 rounded-lg"
-          style={{ backgroundImage: "url('../../slep-studios/Candyforlife/candyforlifebackground.png')" }}
+          style={{ backgroundImage: "url('https://raw.githubusercontent.com/coderzawad/website/refs/heads/main/slep-studios/Candyforlife/candyforlifebackground.png')" }}
         >
           <h2 className="text-center font-bold text-black text-lg dark:text-white">Download</h2>
           <p className="text-center text-black dark:text-white font-medium mb-5">
